@@ -23,6 +23,8 @@ builder.Host.UseSerilog((hostContext, loggerConfiguration) =>
     .Enrich.With(new VersionEnricher());
 });
 
+// New comment code change.
+
 var app = builder.Build();
 
 app.AddCommands<LogCommands>();
